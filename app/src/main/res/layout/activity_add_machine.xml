@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mikeivan.apps.laundrytracker.AddMachine">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_check_circle_white_18dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/radio_washer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Washer"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_dryer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dryer"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Machine Name: " />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="abc123"
+            android:textColor="@android:color/black"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_view"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time: " />
+
+        <EditText
+            android:id="@+id/edit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="45"
+            android:textColor="@android:color/black"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+</RelativeLayout>

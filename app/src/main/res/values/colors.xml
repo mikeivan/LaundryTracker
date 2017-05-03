@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Blue Grey 500 -->
+    <color name="colorPrimary">#607D8B</color>
+
+    <!-- Blue Grey 700 -->
+    <color name="colorPrimaryDark">#455A64</color>
+
+    <!-- Blue 500 -->
+    <color name="colorAccent">#03A9F4</color>
+</resources>
